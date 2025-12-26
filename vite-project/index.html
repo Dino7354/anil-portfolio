@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/Dinesh.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preload critical resources for faster perceived load -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="stylesheet" href="/src/index.css" />
+    
+    <!-- Enhanced meta tags for better SEO & sharing -->
+    <meta name="description" content="Anil Suthar – Aspiring Interior Designer & Full-Stack Developer | Crafting timeless spaces and digital experiences with precision and creativity." />
+    <meta name="author" content="Anil Suthar" />
+    <meta property="og:title" content="🏛️ ArchiAnil | Design • Structure • Innovation" />
+    <meta property="og:description" content="Portfolio of Anil Suthar – Interior Design Graduate blending architectural creativity with modern web development." />
+    <meta property="og:image" content="/Dinesh.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <title>🏛️ ArchiAnil | Design • Structure • Innovation</title>
+    
+    <!-- Dynamic title animation with architectural flair -->
+    <script>
+      const titles = [
+        "🏛️ ArchiAnil | Design • Structure • Innovation",
+        "✏️ Blueprinting Tomorrow",
+        "🏗️ Constructing Digital Spaces",
+        "📐 Precision in Every Line",
+        "🏙️ Modern Architectural Vision",
+        "🧱 Materializing Ideas",
+        "🏛️ Where Design Meets Code",
+        "🌃 Crafting Timeless Experiences"
+      ];
+      let index = 0;
+      setInterval(() => {
+        document.title = titles[index];
+        index = (index + 1) % titles.length;
+      }, 3000); // Slightly slower for elegance
+    </script>
+  </head>
+  <body class="bg-black text-gray-200 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
